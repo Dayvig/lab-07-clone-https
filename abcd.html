@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var wackynum=0;
+    var wackystring="";
+    for (var i=1;i<=4;i++){
+      if (i == 1){
+      var inp = prompt("Enter a wacky number");
+      var input = parseInt(inp, 10);
+      wackynum = input;
+      wackystring+=""+wackynum;
+    }
+      else if (i == 2){
+        var inp = prompt("Enter a wacky number");
+        var input = parseInt(inp, 10);
+        wackynum = input;
+      }
+      else if (i == 3){
+        var inp = prompt("Enter a wacky number");
+        var input = parseInt(inp, 10);
+        wackynum *= input;
+        wackystring += ""+wackynum;
+      }
+    else {
+      var inp = prompt("Enter one more wacky number");
+      var input = parseInt(inp, 10);
+      wackystring += ""+input;
+      }
+    }
+      document.write(wackystring);
+    </script>
+  </body>
+</html>

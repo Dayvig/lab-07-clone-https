@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var wackynum=0;
+    for (var i=2;i>0;i--){
+      if (i != 1){
+      var input = prompt("Enter a wacky number");
+      wackynum = input;
+    }
+    else {
+      var input = prompt("Enter one more wacky number");
+      wackynum *= input;
+      }
+    }
+      document.write(wackynum);
+    </script>
+  </body>
+</html>
